@@ -4,7 +4,8 @@ import pandas as pd
 import numpy as np # Import numpy for array manipulation
 import pickle
 # Load the model
-Log_Reg_model = pickle.load('Student_Stress_logistic_regression_model.pkl')
+with open('Student_Stress_logistic_regression_model.pkl', 'rb') as f:
+    Log_Reg_model = pickle.load(f)
 
 # --- Manual Preprocessing Setup (Requires knowledge from training data) ---
 # Define the expected order of features after manual preprocessing.
