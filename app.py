@@ -2,9 +2,9 @@ import streamlit as st
 import joblib
 import pandas as pd
 import numpy as np # Import numpy for array manipulation
-
+import pickle
 # Load the model
-Log_Reg_model = joblib.load('Student_Stress_logistic_regression_model.pkl')
+Log_Reg_model = pickle.load('Student_Stress_logistic_regression_model.pkl')
 
 # --- Manual Preprocessing Setup (Requires knowledge from training data) ---
 # Define the expected order of features after manual preprocessing.
